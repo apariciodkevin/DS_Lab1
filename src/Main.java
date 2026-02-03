@@ -16,11 +16,18 @@ public class Main {
 
         // variable choice holds the user selection.
         int choice;
-
-        do {
-            System.out.println("Choose your option (1 for US metrics, 2 for general metrics");
+        // Asks user to select an option
+        System.out.println("Choose your option (1 for US metrics 2 for general metrics):");
+        choice = sc.nextInt();
+        // validates user input
+        while (choice < 1 || choice > 2){
+            System.out.println("WRONG OPTION!!");
+            System.out.println("Choose your option (1 for US metrics 2 for general metrics);");
             choice = sc.nextInt();
-        } while (choice < 1 || choice > 2);
+        }
+
+
+
 
     }
 }
