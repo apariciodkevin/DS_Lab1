@@ -25,9 +25,7 @@ public class Main {
             System.out.println("Choose your option (1 for US metrics 2 for general metrics);");
             choice = sc.nextInt();
         }
-
-
-
-
     }
+
+
 }
