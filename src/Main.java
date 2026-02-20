@@ -37,6 +37,7 @@ public class Main {
 
             System.out.println("Your weight in pounds: " + obj.getWeight() + "lb");
             System.out.println("Your height in feet: " + obj.getHeight() + "ft");
+            System.out.println("BMI: " + obj.getBmiUs());
 
 
 
