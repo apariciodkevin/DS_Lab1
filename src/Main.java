@@ -25,6 +25,22 @@ public class Main {
             System.out.println("Choose your option (1 for US metrics 2 for general metrics);");
             choice = sc.nextInt();
         }
+
+        if (choice == 1){
+            // Create bmi class
+            BMI obj = new BMI();
+            System.out.println("Enter your weight in pounds");
+            obj.setWeight(sc.nextDouble());
+
+            System.out.println("Enter your height in feet");
+            obj.set_height(sc.nextDouble());
+
+            System.out.println("Your weight in pounds: " + obj.getWeight() + "lb");
+            System.out.println("Your height in feet: " + obj.getHeight() + "ft");
+
+
+
+        }
     }
 
 

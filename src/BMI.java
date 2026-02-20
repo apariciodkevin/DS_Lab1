@@ -1,15 +1,32 @@
 public class BMI {
-    private int height;
-    private int weight;
+    private double height;
+    private double weight;
     private double bmiUs;
     private double bmiGeneral;
 
     // Setters
-    void set_height(int height){
+    void set_height(double height){
         this.height = height;
     }
 
-    void setWeight (int weight){
+    void setWeight (double weight){
         this.weight = weight;
     }
+
+    // Getters
+    double getHeight (){
+        return height;
+    }
+
+    double getWeight (){
+        return weight;
+    }
+
+    double getBmiUs(){
+        bmiUs = getWeight() / (getHeight() * getHeight()) * 703;
+        return bmiUs;
+    }
+
+
+
 }
