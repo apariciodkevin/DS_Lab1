@@ -33,7 +33,7 @@ public class Main {
             obj.setWeight(sc.nextDouble());
 
             System.out.println("Enter your height in feet");
-            obj.setheight(sc.nextDouble());
+            obj.setHeight(sc.nextDouble());
 
             System.out.println("Your weight in pounds: " + obj.getWeight() + "lb");
             System.out.println("Your height in feet: " + obj.getHeight() + "ft");
@@ -45,16 +45,16 @@ public class Main {
         if (choice == 2){
             BMI obj2 = new BMI();
             System.out.println("Enter your weight in kilograms");
-            obj2.setheight(sc.nextDouble());
+            obj2.setWeight(sc.nextDouble());
 
             System.out.println("Enter your height in meters");
-            obj2.setheight(sc.nextDouble());
+            obj2.setHeight(sc.nextDouble());
 
-            System.out.println("Your weight in kilograms: " + obj2.getWeight() + "lb");
-            System.out.println("Your height in meters: " + obj2.getWeight() + "m");
-
+            System.out.println("Your weight in kilograms: " + obj2.getWeight() + "kg");
+            System.out.println("Your height in meters: " + obj2.getHeight() + "m");
+            System.out.printf("BMI: %.2f", obj2.getBmiGeneral());
+            System.out.println();
+            obj2.getResultGeneral();
         }
     }
-
-
 }
